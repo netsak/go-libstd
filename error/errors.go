@@ -2,7 +2,6 @@ package libError
 
 import (
 	"log/slog"
-	"os"
 )
 
 // FailOnError exit the program with code 1 when the error is not nil
@@ -10,6 +9,6 @@ import (
 func FailOnError(err error, msg string) {
 	if err != nil {
 		slog.Error(msg, "err", err)
-		os.Exit(1)
+		panic(err)
 	}
 }
