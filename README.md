@@ -3,3 +3,4 @@
 ![coverage](https://raw.githubusercontent.com/netsak/go-libstd/badges/.badges/main/coverage.svg)
 
 Extension of the Golang standard library
+
